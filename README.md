@@ -1,12 +1,67 @@
-# React + Vite
+# ⚡ FlashChat – Real-time Chat App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+FlashChat is a sleek and simple real-time chat application built with React and Firebase. It supports live messaging with user authentication and is designed to deliver seamless communication between users.
 
-Currently, two official plugins are available:
+![FlashChat UI Screenshot]()
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## Expanding the ESLint configuration
+## 🚀 Features
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- 🔐 User Authentication with Firebase Auth
+- 💬 Real-time Messaging via Firebase Realtime Database
+- 💻 Responsive and Minimal UI
+- 📡 Automatically syncs chats between users
+- 🌐 Live deployable on Vercel / Netlify
+
+---
+
+## 🛠️ Tech Stack
+
+- **Frontend:** React.js, Vite, CSS
+- **Backend:** Firebase Auth, Firebase Realtime Database
+- **Hosting:** Vercel / Netlify (recommended)
+
+---
+
+## 🧑‍💻 Getting Started
+
+### 1. Clone the repo
+
+```bash
+git clone https://github.com/imkool47/flashchat.git
+cd flashchat
+```
+
+### 2. Install dependencies
+
+```bash
+npm install
+```
+
+### 3. Add Firebase credentials
+
+Create a .env file in the root directory:
+
+```bash
+REACT_APP_API_KEY=your_api_key
+REACT_APP_AUTH_DOMAIN=your_project.firebaseapp.com
+REACT_APP_DATABASE_URL=https://your_project.firebaseio.com
+REACT_APP_PROJECT_ID=your_project_id
+REACT_APP_STORAGE_BUCKET=your_project.appspot.com
+REACT_APP_MESSAGING_SENDER_ID=your_sender_id
+REACT_APP_APP_ID=your_app_id
+```
+
+### 4. Run the app
+
+```bash
+npm run dev
+```
+
+## 📦 Deploying to Vercel or Netlify
+
+- Push the code to GitHub.
+- Connect your repo to Vercel or Netlify.
+- Set the same .env variables in the project settings.
+- Build & deploy!
